@@ -1,0 +1,62 @@
+/* YouTube Shorts Title Display Extension Styles */
+
+/* Position metadata container below thumbnail image with bottom spacing */
+.shortsLockupViewModelHostInlineMetadata,
+.shortsLockupViewModelHostShowOverPlayer {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  padding: 8px 0 12px 0 !important;
+  margin-bottom: 16px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Bottom gap between grid cards/rows */
+ytd-rich-item-renderer[is-shorts-grid],
+ytm-shorts-lockup-view-model-v2,
+ytm-shorts-lockup-view-model {
+  margin-bottom: 5px !important;
+}
+
+/* Format h3 title under the thumbnail image - bright white text for dark theme */
+h3.shortsLockupViewModelHostMetadataTitle {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  color: #ffffff !important;
+  font-family: "Roboto", "YouTube Sans", "Segoe UI", sans-serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  line-height: 1.8rem !important;
+  margin: 4px 0 2px 0 !important;
+  padding: 0 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure processed title stays bright white */
+h3.shortsLockupViewModelHostMetadataTitle[data-yt-shorts-title-processed="true"] {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* View count styling below title - crisp light grey */
+.shortsLockupViewModelHostMetadataSubhead,
+.shortsLockupViewModelHostMetadataSubhead span,
+.shortsLockupViewModelHostMetadataSubhead yt-attributed-string {
+  color: #aaaaaa !important;
+  font-size: 1.2rem !important;
+  line-height: 1.6rem !important;
+  text-shadow: none !important;
+}
