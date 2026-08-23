@@ -47,5 +47,5 @@ A minimalist Google Chrome Extension (Manifest V3) that extracts title text from
 3. Enable **Developer mode** using the toggle in the top-right corner.
 4. Click the **Load unpacked** button in the top-left menu.
 5. Select the project directory:
-   `/home/nirmanyu/Music/git_projects/yt-web-shorts-display`
+   `/yt-web-shorts-display`
 6. Open [YouTube.com](https://www.youtube.com) and view the Shorts grid items with visible titles!
